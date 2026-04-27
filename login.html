@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Admin - MI Tarbiyatul Falah</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Khusus halaman login biar ke tengah banget */
+        .login-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #006633;
+        }
+    </style>
+</head>
+<body class="login-body">
+    <div class="card" style="width: 350px;">
+        <h2 style="color:#006633; margin-bottom:20px;">Admin Login</h2>
+        <input type="text" id="username" placeholder="Username" style="width:100%; padding:10px; margin-bottom:10px;">
+        <input type="password" id="password" placeholder="Password" style="width:100%; padding:10px; margin-bottom:10px;">
+        <button onclick="prosesLogin()" class="btn-cta" style="width:100%; border:none; cursor:pointer;">MASUK</button>
+        <br><br>
+        <a href="index.html" style="text-decoration:none; color:#777; font-size:0.8rem;">Kembali ke Beranda</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

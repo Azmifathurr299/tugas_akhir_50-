@@ -1,0 +1,139 @@
+:root {
+    --hijau-tua: #006633;
+    --emas: #ffd700;
+    --putih: #ffffff;
+    --abu-muda: #f4f4f4;
+    --hitam: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--abu-muda);
+    color: var(--hitam);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: var(--hijau-tua);
+    color: var(--putih);
+    border-bottom: 4px solid var(--emas);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--putih);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: var(--emas);
+}
+
+.btn-admin {
+    background: var(--emas);
+    color: var(--hijau-tua) !important;
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--putih);
+}
+
+.hero-content h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.container {
+    padding: 50px 8%;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section h2 {
+    color: var(--hijau-tua);
+    text-transform: uppercase;
+}
+
+.info-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--putih);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--hijau-tua);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-cta {
+    background: var(--emas);
+    color: var(--hijau-tua);
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
